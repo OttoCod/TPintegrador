@@ -1,0 +1,179 @@
+/* Estilos para el encabezado */
+header {
+    background: #000; /* Fondo negro para el encabezado */
+    padding: 10px 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    padding: 20px;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+/* Estilos para la sección de ubicación */
+.location {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.location iframe {
+    border-radius: 8px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Ajustes para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    /* Ajuste del tamaño de la tipografía */
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Ajustes para pantallas más pequeñas (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .video-background video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

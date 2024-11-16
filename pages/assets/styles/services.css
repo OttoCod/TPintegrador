@@ -1,0 +1,106 @@
+/* Estilos para la sección de servicios */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.service-box {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    border-color: #fff;
+    box-shadow: 
+        0 0 7px #fff,
+        0 0 15px #fff,
+        0 0 25px #fff,
+        0 0 35px #fff,
+        0 0 45px #fff,
+        0 0 60px #fff;  /* Agregué más capas con mayor alcance */
+}
+
+.service-box h2 {
+    margin-bottom: 15px;
+    transition: text-shadow 0.3s ease;
+}
+
+.service-box p {
+    margin-bottom: 20px;
+}
+
+.service-box a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.service-box a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 
+        0 0 7px #fff,
+        0 0 15px #fff,
+        0 0 25px #fff;
+    transform: scale(1.05);
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* Estilos para el título de 'Servicios' con efecto de neón blanco */
+.services-header {
+    text-align: center;
+    margin-top: 50px; /* Ajusta el espacio según necesites */
+}
+
+.neon-text {
+    font-size: 80px; /* Tamaño grande */
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+/* Animación de parpadeo neón blanco */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
+        color: #fff;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+        color: #fff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
+        color: #fff;
+    }
+}

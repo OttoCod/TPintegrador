@@ -1,0 +1,71 @@
+/* Estilos para el encabezado */
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Ajustes para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    /* Ajuste del tamaño de la tipografía */
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Ajustes para pantallas más pequeñas (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .video-background video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

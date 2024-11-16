@@ -1,0 +1,20 @@
+ /* Estilos para el botón de volver arriba */
+ #scrollToTop {
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* A 20px del fondo */
+    right: 20px; /* A 20px de la derecha */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a mano */
+    font-size: 16px; /* Tamaño de fuente */
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    transition: background-color 0.3s; /* Transición suave para el color */
+    display: none; /* Oculto por defecto */
+}
+
+#scrollToTop:hover {
+    background-color: #555; /* Cambia el fondo al pasar el ratón */
+}

@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.service-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    box-shadow: 
+        0 0 15px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 45px rgba(255, 255, 255, 0.4);
+}
+
+/* Línea de neón que recorre el borde */
+.service-info::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    background-size: 200% 200%;
+    animation: neon-line 2s linear infinite;
+    z-index: 2;
+}
+
+.service-info::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #000;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Animación de la línea de neón */
+@keyframes neon-line {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.service-info h1 {
+    font-size: 2em;
+    position: relative;
+    z-index: 3;
+}
+
+.service-info p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    position: relative;
+    z-index: 3;
+}

@@ -1,0 +1,67 @@
+/* Estilos básicos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Estilo de los entrenadores */
+.trainers img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.trainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilo de la sección "Únete a Nosotros" */
+.join-us a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.join-us a:hover {
+    background-color: #555;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Estilos para el encabezado */
+header {
+    background: #000; /* Fondo negro para el encabezado */
+    padding: 10px 0;
+    color: #fff;
+}
+
