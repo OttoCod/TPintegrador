@@ -1,9 +1,9 @@
 <?php
 // Incluir el archivo de conexión
-require('../connection.php');// Usa 'require' para asegurarte que la conexión sea exitosa
+require('../connection.php');  // Usa 'require' para asegurarte que la conexión sea exitosa
 
 // Cerrar la conexión
-
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -42,17 +42,17 @@ require('../connection.php');// Usa 'require' para asegurarte que la conexión s
             <div class="service-box">
                 <h2>Personal Trainer</h2>
                 <p>Un entrenador personal estará presente para guiarte de manera presencial en tu entrenamiento y ayudarte a alcanzar tus objetivos.</p>
-                <a href="../servicios/personaltrain.html ">Más Información</a>
+                <a href="../servicios/personaltrain.php ">Más Información</a>
             </div>
             <div class="service-box">
                 <h2>Personal Trainer y Nutricionista</h2>
                 <p>Un plan integral donde un entrenador personal y un nutricionista trabajarán en conjunto para optimizar tu rendimiento y salud.</p>
-                <a href="../servicios/personalynutri.html">Más Información</a>
+                <a href="../servicios/personalynutri.php">Más Información</a>
             </div>
             <div class="service-box">
                 <h2>Equipo Medico</h2>
                 <p>Un equipo Medico especializado, incluyendo un fisioterapeutas y kinesiologos profesionales, te ayudaran con cualquier tipo de dolor o molestia.</p>
-                <a href="../servicios/equipomedico.html">Más Información</a>
+                <a href="../servicios/equipomedico.php">Más Información</a>
             </div>
         </section>
     </main>

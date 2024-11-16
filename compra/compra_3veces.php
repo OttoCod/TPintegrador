@@ -28,10 +28,10 @@ $conn->close();
         </div>
         <nav>
             <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="about.php">Sobre Nosotros</a></li>
-                <li><a href="membreship.php">Membresías</a></li>
-                <li><a href="contact.php">Contacto</a></li>
+                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="../pages/about.php">Sobre Nosotros</a></li>
+                <li><a href="../pages/membreship.php">Membresías</a></li>
+                <li><a href="../pages/contact.php">Contacto</a></li>
             </ul>
         </nav>
     </header>

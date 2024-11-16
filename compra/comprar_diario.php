@@ -26,10 +26,10 @@ $conn->close();
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/about.html">Sobre Nosotros</a></li>
-                <li><a href="../pages/membreship.html">Membresías</a></li>
-                <li><a href="../pages/contact.html">Contacto</a></li>
+                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="../pages/about.php">Sobre Nosotros</a></li>
+                <li><a href="../pages/membreship.php">Membresías</a></li>
+                <li><a href="../pages/contact.php">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@ $conn->close();
     <!-- Sección principal de compra -->
     <main>
         <section>
-            <h1>Compra 3 Veces a la Semana</h1>
+            <h1>Compra paso diario</h1>
             <p>Completa el formulario para adquirir tu membresía de pase diario.</p>
 
             <form id="purchaseForm" action="procesar_compra.php" method="post">

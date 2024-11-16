@@ -81,7 +81,7 @@ $conn->close();
         <section class="join-us">
             <h2 class="section-title">¡Únete a Nosotros!</h2>
             <p>Si estás listo para comenzar tu viaje hacia una vida más saludable, únete a nuestra comunidad hoy mismo.</p>
-            <a href="contact.html">Contáctanos para más información</a>
+            <a href="contact.php">Contáctanos para más información</a>
         </section>
     </main>
 
